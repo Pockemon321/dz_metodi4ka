@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пиццерия</title>
+</head>
+<body>
+    <h1>Меню пиццерии</h1>
+
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Состав</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <td>Пицца Маргарита</td>
+            <td>Томатный соус, моцарелла, базилик</td>
+            <td>10$</td>
+        </tr>
+        <tr>
+            <td>Пицца Пепперони</td>
+            <td>Томатный соус, моцарелла, пепперони</td>
+            <td>12$</td>
+        </tr>
+        <!-- Другие виды пиццы -->
+    </table>
+
+    <h2>Форма заказа</h2>
+    <form action="обработчик.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="pizza">Выберите пиццу:</label>
+        <select id="pizza" name="pizza">
+            <option value="Маргарита">Пицца Маргарита</option>
+            <option value="Пепперони">Пицца Пепперони</option>
+            <!-- Добавьте другие варианты пиццы -->
+        </select><br>
+
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" required><br>
+
+        <label for="comments">Комментарии:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Заказать">
+    </form>
+</body>
+</html>
